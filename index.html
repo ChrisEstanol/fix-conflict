@@ -87,6 +87,11 @@
       } else {
         li.removeClass('done');
       }
+
+    $('.todo-list').on('click', '.delete', function(e) {
+      e.preventDefault();
+      $(this).parent().remove();
+
     });
   </script>
 </body>
